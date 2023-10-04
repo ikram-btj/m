@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>maison de jeune</title>
+
+  </head>
+  <body>
+    <section  class="form h-screen flex justify-center items-center">
+      <div class="divform">
+
+        <div id="response" class="bg-green-400 text-center px-5 py-1 self-center text-white w-18 hidden"></div>
+        <form id="information"action="file.php" method="post" enctype="multipart/form-data" class="flex flex-col text-right gap-4">
+          <div class="flex flex-col-reverse absolute pt-6 pl-4">
+            <label for="imageInput0" class="file-label">صورة شمسية</label>
+            <input type="file" id="imageInput0" class="file-input"name="file0" accept="image/*">
+            <div class="image-container" id="imageContainer0"></div>
+          </div>
+          <div class="flex gap-8 text-right flex-row-reverse">
+            <div class="pr-4 pt-8">
+              <input type="text" class="text-right mr-7 py-1 px-2" placeholder="الإسم" name="nom" required>
+              <label class="text-xl"for="">:الإسم</label>
+            </div>
+            <div class="pr-4 pt-8">
+              <input type="text" class="text-right mr-8 py-1 px-2" placeholder="اللقب" name="prenom" required>
+              <label class="text-xl"for="">:اللقب</label>
+            </div>
+          </div>
+          <div class="flex gap-8 text-right flex-row-reverse">
+            <div class="pr-4 pt-8">
+              <input type="text" class="execpt text-right mr-4 py-1 px-2" placeholder="الاقامة" name="place" required>
+              <label class="text-xl"for="">:الاقامة</label>
+            </div>
+            <div class="pr-4 pt-8">
+              <input type="text" class="execpt text-right mr-4 py-1 px-2" placeholder="لهاتف" name="phone" required>
+              <label class="text-xl"for="">:الهاتف</label>
+            </div>
+          </div>
+          <div class="flex gap-8 text-right flex-row-reverse">
+            <div class="pr-4 pt-8">
+              <input type="text" class="text-right mr-4 py-1 px-2" placeholder="تاريخ و مكان الازدياد" name="birth" required>
+              <label class="text-xl"for="">:الازدياد</label>
+            </div>
+            <div class="pr-4 pt-8">
+              <input type="text" class="execpt text-right mr-5 py-1 px-2" placeholder="النشاط" name="activite" required>
+              <label class="text-xl"for="">:النشاط</label>
+            </div>
+          </div>
+
+          <div class="flex flex-row-reverse mt-8 justify-center gap-6">
+            <div class="flex flex-col-reverse">
+              <label for="imageInput1" class="file-label">حقوق التسجيل</label>
+              <input type="file" id="imageInput1" name="file1"class="file-input" accept="image/*">
+              <div class="image-container" id="imageContainer1"></div>
+            </div>
+
+
+            <div class="flex flex-col-reverse">
+              <label for="imageInput2" class="file-label">شهادة طبية</label>
+              <input type="file" id="imageInput2" name="file2" class="file-input" accept="image/*">
+              <div class="image-container" id="imageContainer2"></div>
+            </div>
+
+            <div class="flex flex-col-reverse">
+              <label for="imageInput3" class="file-label">بطاقة التعريف</label>
+              <input type="file" id="imageInput3"name="file3" class="file-input" accept="image/*">
+              <div class="image-container" id="imageContainer3"></div>
+            </div>
+
+            <div class="flex flex-col-reverse">
+              <label for="imageInput4" class="file-label">ترخيص ابوي</label>
+              <input type="file" id="imageInput4"name="file4" class="file-input" accept="image/*">
+              <div class="image-container" id="imageContainer4"></div>
+            </div>
+
+            <div class="flex flex-col-reverse">
+              <label for="imageInput5" class="file-label">شهادة الميلاد</label>
+              <input type="file" id="imageInput5" name="file5"class="file-input" accept="image/*">
+              <div class="image-container" id="imageContainer5"></div>
+            </div>
+          </div>
+          <button name="save" id="save"class="save text-white text-center text-lg radius-lg py-1 w-32 mt-4  self-center">حفظ</button>
+        </form>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

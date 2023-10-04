@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+.triangle
+{
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 50px solid #ccccff;
+}
+a,.logo
+{
+  font-family: 'Droid Arabic Kufi', serif;
+  font-weight: bold;
+}
+h1,label
+{
+  font-family: 'Droid Arabic Kufi', serif;
+}
+p
+{
+  font-family: 'Lateef', serif;
+}
+.bg-text 
+{
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width:50%;
+  padding: 20px;
+}
+.sec1
+{
+  background-image: url(image/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: transparent;
+}
+
+.sec1-content
+{
+  background-color: rgba(153, 221, 255, 0.4); 
+}
+.care
+{
+  background:#ccccff ;
+}
+
+.image img
+{
+  width:423px;
+  height:423px;
+}
+.image
+{
+  width:1000px;
+  height:424px;
+}
+.form
+{
+  background-image: url('image/background4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.divform
+{
+  height:600px;
+  width:1000px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+.file-input
+{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-label
+{
+
+  margin-left:5px;
+  background-color: #3498db;
+  color: #fff;
+  text-align:center;
+  padding: 7px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.file-label:hover
+{
+  background-color: #2980b9;
+}
+
+.image-container
+{
+  width: 140px;
+  height: 140px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: inline-block;
+}
+.save
+{
+  background:#538cc6;
+  border-radius:20px;
+}
+
+@media (max-width: 1024px) 
+{
+  .image
+  {
+    width:890px;
+    height:320px;
+  }
+  .image img
+  {
+    width:323px;
+    height:319px;
+  }
+}
